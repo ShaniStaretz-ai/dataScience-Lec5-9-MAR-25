@@ -34,7 +34,7 @@ Pandas
       full_index[:,1:3]= return dataframe with columns 1-3
       ```
   * import data from file csv
-    * in Excel: select cells->ctrl+d-> convert to table with filters.
+    * in Excel: select cells->ctrl+t-> convert to table with filters.
     ```
     pd.read_csv(r'C:\Users\Shani\OneDrive\Documents\school\Ecom\dataScience\dataScience-Lec5-9-MAR-25\example.csv')
     pd.read_csv('example.csv')
