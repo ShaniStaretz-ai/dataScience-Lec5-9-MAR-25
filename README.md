@@ -56,4 +56,13 @@ Pandas
       * 25% (df.percentile(data,25): what's the number x that 25% from the numbers<=x, after sort asc
       * 50%: what's the number x that 50% from the numbers<=x, after sort asc
       * 75%: what's the number x that 75% from the numbers<=x, after sort asc
-    * 
+    * df.shape: returns the length of the dataframe(4,4)
+    * delete rows,columns: df.drop(columns=['a']),df.drop(index=1)- or both with options.
+    * insert : 
+      * df.insert column: df.insert(1,1,data)
+      * df.loc[2]=[4,4,4,4]=upsert to index(key) 2: data=[4,4,4,4]
+      * df.loc[10]=[4,4,4,4]=upsert to index(key) 10: data
+      * using concat: create new df and concat both:
+      ![img_4.png](img_4.png)
+      * reset last index add optional ignore_index=True- reset indexes as auto-increment
+      * reset last index add optional ignore_index=False- concat first df with new df with their origin indexes
