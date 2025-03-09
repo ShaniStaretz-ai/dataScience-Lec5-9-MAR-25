@@ -50,14 +50,14 @@ Pandas
     * df.info: meta details(organic data): columns names, details of each, dtype and their counters, memory usage
     ![img_2.png](img_2.png)
       * if no value return the worst type float
-    * df.describe(): collection of statistics of the data (doesn't need to be sorted) by columns values  
+    * df.describe(): dataframe of statistics of the data (doesn't need to be sorted) by columns values  
     ![img_3.png](img_3.png)
       * std: סטיית תקן בעמודה
       * 25% (df.percentile(data,25): what's the number x that 25% from the numbers<=x, after sort asc
       * 50%: what's the number x that 50% from the numbers<=x, after sort asc
       * 75%: what's the number x that 75% from the numbers<=x, after sort asc
     * df.shape: returns the length of the dataframe(4,4)
-    * delete rows,columns: df.drop(columns=['a']),df.drop(index=1)- or both with options.
+    * delete rows,columns: df.drop(columns=['a'])=drop('a',axis=1),df.drop(index=0)=drop(0)=drop(0,axis=0)- or both with options.
     * insert : 
       * df.insert column: df.insert(1,1,data)
       * df.loc[2]=[4,4,4,4]=upsert to index(key) 2: data=[4,4,4,4]
