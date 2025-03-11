@@ -24,6 +24,8 @@ Pandas
     * access row:
       * full_index.loc['CA'],loc['NY':'AZ']= return Series with index value 'CA'
       * full_index.iloc[1],iloc[1:3],[::-1]= return Series with location 1
+      * full_index.head(row_names=default=5)
+      * full_index.tail(row_names=default=5)
       ![img.png](img.png)
     * access column: 
       ```
@@ -66,3 +68,5 @@ Pandas
       ![img_4.png](img_4.png)
       * reset last index add optional ignore_index=True- reset indexes as auto-increment
       * reset last index add optional ignore_index=False- concat first df with new df with their origin indexes
+    * inplace= optional parameter, usage on modify functions,
+      * if you want to make the change on the origin df and return new df. 
